@@ -1,0 +1,41 @@
+.keep-app{
+
+    .card-outside{
+        padding: 3px;
+        break-inside: avoid-column;
+    }
+    .card{
+        position: relative;
+        margin: 0 0 15px ;
+        cursor: pointer;
+        background-color: #e1f2fb;
+        padding: 10px;
+        padding-bottom: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12) !important;
+        transition: .3s;
+    }
+    .card:hover{
+        box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.6), 0px 2px 2px 0px rgba(0, 0, 0, 0.34), 0px 1px 5px 0px rgba(0, 0, 0, 0.22) !important;
+        
+    }
+    
+    .card .close{
+        text-align: center;
+        bottom: 0;
+    }
+    .card .btns{
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        display: flex;
+    }
+    .card button{
+        all: unset;
+        height: 1.5em;
+        width: 1.5em;
+        text-align: center;
+    }
+}

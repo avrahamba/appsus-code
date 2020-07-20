@@ -1,0 +1,62 @@
+.email-preview{
+    background-color: #4596d175;
+    margin-bottom: 3px;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12) !important;
+    transition: .3s;
+    &:hover{
+        box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.6), 0px 2px 2px 0px rgba(0, 0, 0, 0.34), 0px 1px 5px 0px rgba(0, 0, 0, 0.22) !important;
+    }
+    &.is-read{
+        background-color: #f1f9f9;   
+    }
+    
+    .title-mail{
+        padding: 10px;
+        
+    }
+    .body-mail{
+        padding: 10px;
+        padding-top: 0;
+    }
+    .body-mail p{
+        margin-top: 0;
+    }
+    
+    &.is-open .title-mail{
+        background-color: #bacaca;
+    }
+    
+    button{
+        all:unset;
+        cursor: pointer;
+    }
+    
+    :first-child{
+        display: flex;
+        justify-content: space-between;
+    }
+    .subject{
+        font-weight: 900;
+        margin-right: 15px;
+        margin-left: 10px;
+    }
+    .rigth{
+        text-align: right;
+        text-align: -moz-right;
+        text-align: -webkit-right;
+    }
+    .btns{
+        display: flex;
+        svg{
+            height: 20px;
+            margin-left: 15px;
+        }
+    }
+    .star-active svg{
+        color: gold;
+    }
+    .body{
+        padding-inline-start: 15px;
+    }
+}

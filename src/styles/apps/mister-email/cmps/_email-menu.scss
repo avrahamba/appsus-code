@@ -1,0 +1,42 @@
+.email-menu {
+    display: flex;
+    flex-direction: column;
+    & > * {
+        margin-bottom: 0.3em;
+        padding: 0.5em;
+        text-decoration: none;
+        color: #003571;
+        display: flex;
+        flex-direction: row;
+    }
+    i {
+        margin-right: 0.5em;
+    }
+    .router-link-active {
+        background-color: #4596d175;
+        border-end-end-radius: 999px;
+        border-start-end-radius: 999px;
+        border-bottom-right-radius: 999px;
+        border-top-right-radius: 999px;
+    }
+}
+
+@media (max-width: 650px) {
+    .email-menu {
+        flex-direction: row;
+        justify-content: space-around;
+
+        .router-link-active {
+            background-color: #4596d175;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+        }
+        & > * {
+            flex-direction: column;
+            text-align: center;
+        }
+        i {
+            margin-right: 0;
+        }
+    }
+}

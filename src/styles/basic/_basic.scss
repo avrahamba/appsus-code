@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Lato;
+    src: url(~@/assets/fonts/Lato-Regular.ttf);
+}
+
+
+html{
+    font-family: 'Lato' ;
+    color: #003571;
+}
+body {
+    margin: 0;
+    /* background-color: #f1f9f9; */
+}
+h1{
+    all: unset;
+    color: #003571;
+}
+ul{
+    list-style: url;
+}
+
+svg{
+    color:#333;
+}
+textarea {
+    resize: none;
+}
+p{
+    white-space: pre-line;
+}
+
+h2{
+    font-weight: 700;
+}

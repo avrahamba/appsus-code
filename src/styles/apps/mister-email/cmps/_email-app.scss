@@ -1,0 +1,32 @@
+.email-app{
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    grid-template-rows: 2.2em 1fr;
+    max-width: 980px;
+    margin: auto;
+    gap: 10px;
+}
+.email-filter{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+
+
+.email-menu{
+    grid-column: 1 / 2;
+    grid-row: 2 / -1;
+}
+
+@media (max-width:1000px){
+    .email-app{
+        max-width: 800px;
+    }
+}
+
+@media (max-width:650px){
+    .email-app{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2.2em 1fr 1fr;
+        gap:5;
+    }
+}

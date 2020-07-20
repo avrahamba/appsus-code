@@ -1,0 +1,27 @@
+.add-note-todo {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .add-dec {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    button.link {
+        all: unset;
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.note-todos input {
+    font-size: 1em;
+}
+
+@media (max-width: 450px) {
+    .add-note-todo {
+        max-width: 10em;
+    }
+}

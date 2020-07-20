@@ -1,0 +1,54 @@
+<template>
+<div class="add-note-todo">
+    <ul>
+        <li v-for="(todo, inx) in info.todos" :key="inx">
+            <input 
+                type="text" 
+                v-model="info.todos[inx]"
+                @input="$emit('input',info)"
+                placeholder="Add todo"
+                @focus="focusTodo(inx)"
+            >
+        </li>
+    </ul>
+</div>
+</template>
+
+<script>
+import {eventBus, EVENT_CLEAR} from '../../../../services/event-bus.service.js';
+
+export default {
+    data() {
+        return {
+            info:{
+                type:'todo',
+                todos:['']
+            }
+        }
+    },
+    methods: {
+        add(){
+            this.info.todos.push('');
+        },
+        dec(){
+            if(this.info.todos.length === 1)return
+            this.info.todos.pop();
+        },
+        focusTodo(inx){
+            if(inx===this.info.todos.length-1) this.add()
+        }
+    },
+    created() {
+        eventBus.$on(EVENT_CLEAR,()=>{
+            this.info={
+                type:'todo',
+                todos:['']
+            }
+        })
+    },
+}
+</script>
+
+<style>
+
+</style>
